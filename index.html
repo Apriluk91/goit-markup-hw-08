@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pl">
   <head>
-    <meta charset="UTF-8" />
+    <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Studio</title>
     <link
@@ -19,7 +19,7 @@
         </div>
       <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
                 <svg class="menu-toggle__icon-open" width="40" height="40">
-                    <use href="./images/icons.svg#icon-menu_40px"></use>
+                    <use href="./images/icons.svg#icon-envelope"></use>
                 </svg>
       </button>
         <nav>
@@ -431,6 +431,55 @@
     </div>
     </footer>
 
+     <div class="mobile menu-container js-menu-container" id="mobile-menu">
+      <button type="button" class="menu-toggle js-close-menu">
+        <svg class="" width="20px" height="20px">
+          <use href="./images/icons/sprite.svg#icon-menuclose"></use>
+        </svg>
+      </button>
+
+      <ul class="mobile__navlist">
+        <li class="mobile__navitem">
+          <a class="mobile__navlink" href="index.html">Agencja</a>
+        </li>
+        <li class="mobile__navitem">
+          <a class="mobile__navlink" href="portfolio.html">Portfolio</a>
+        </li>
+        <li class="mobile__navitem">
+          <a class="mobile__navlink" href="#">Kontakt</a>
+        </li>
+      </ul>
+
+      <ul class="mobile__contact">
+        <li class="mobile__clist">
+          <a href="tel:+48111111111" class="mobile__phone">+48 111 111 111</a>
+        </li>
+        <li class="mobile__clist">
+          <a href="mailto:info@devstudio.com" class="mobile__email"
+            >info@devstudio.com</a
+          >
+        </li>
+      </ul>
+
+      <ul class="mobile__medialist">
+        <li class="mobile__mediaitem">
+          <a href="#" class="mobile__medialink">Instagram</a>
+          <p class="mobile__stroke">|</p>
+        </li>
+        <li class="mobile__mediaitem">
+          <a href="#" class="mobile__medialink">Tweeter</a>
+          <p class="mobile__stroke">|</p>
+        </li>
+        <li class="mobile__mediaitem">
+          <a href="#" class="mobile__medialink">Facebook</a>
+          <p class="mobile__stroke">|</p>
+        </li>
+        <li class="mobile__mediaitem">
+          <a href="#" class="mobile__medialink">LinkedIn</a>
+        </li>
+      </ul>
+    </div>
+
 <div class="backdrop is-hidden" data-modal>
   <div class="modal">
     <button type="button" class="modal__button-close" data-modal-close>
@@ -478,6 +527,7 @@
   </div>
 </div>
     <script src="./js/modal.js"></script>
+    <script defer src="./js/mobile-menu.js"></script>
   </body>
 </html>
 

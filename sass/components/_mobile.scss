@@ -55,7 +55,7 @@
     }
   }
   &__navlink {
-    color: $main-text-color;
+    color: black;
     @include transition;
     @include hover-active;
   }
@@ -84,7 +84,7 @@
     font-weight: 500;
     line-height: 1.17;
     letter-spacing: 0.02em;
-    color: $paragraf-text-color;
+    color: var(gray);
 
     @include hover-active;
   }
@@ -101,10 +101,10 @@
     letter-spacing: 0.02em;
   }
   &__medialink {
-    color: $super-blue;
+    color: var(--blue-sky);
     display: block;
     padding: 0;
-    border-color: $active-color;
+    border-color: var(--blue-sky);
     @include transition;
     @include hover-scale;
   }
