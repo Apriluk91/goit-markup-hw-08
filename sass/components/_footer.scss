@@ -1,0 +1,223 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 60px 0;
+  background-color: var(--main-theme);
+
+  @include tablet {
+    &__wrapper {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+  }
+  @include desktop {
+    &__wrapper {
+      display: flex;
+      flex-direction: row;
+    }
+  }
+}
+
+.logo {
+  @include logo;
+  @include transition;
+  @include hover-scale;
+
+  &--footer {
+    display: flex;
+
+    justify-content: center;
+
+    @include tablet {
+      left: 30%;
+      margin-bottom: 20px;
+    }
+
+    @include desktop {
+      justify-content: left;
+    }
+  }
+
+  &__span {
+    color: var(--blue-sky);
+  }
+
+  &__span--white {
+    color: var(--snow);
+  }
+}
+
+.address {
+  &__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+
+    @include desktop {
+      align-items: flex-start;
+    }
+
+    @include tablet {
+      flex-direction: column;
+      right: 50%;
+    }
+  }
+
+  &__item {
+    @include transition;
+  }
+  &__item:hover,
+  &__item:focus {
+    color: var(--blue-sky);
+    $footer-text-color: var(--blue-sky);
+    transform: scale(1.05);
+  }
+  &__link {
+    line-height: 1.46;
+    color: var(--snow);
+    font-family: var(--main-font);
+    font-style: normal;
+    letter-spacing: 0.03em;
+  }
+  &__contact {
+    color: $footer-text-color;
+    line-height: 1.46;
+    letter-spacing: 0.03em;
+    font-family: 'Roboto', 'sans-serif';
+    font-style: normal;
+  }
+  &__item:not(:last-child) {
+    margin-bottom: 9px;
+  }
+}
+
+.join {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 60px 0;
+
+  @include tablet {
+    margin: 0;
+  }
+
+  @include desktop {
+    margin-left: 70px;
+    margin-top: 30px;
+  }
+
+  &__head {
+    color: var(--snow);
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 1.14;
+  }
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 20px;
+  }
+  &__item {
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 12px 12px;
+    @include transition;
+  }
+  &__icon {
+    fill: var(--snow);
+    display: block;
+  }
+
+  &__item:hover,
+  &__item:focus {
+    background-color: var(--blue-sky);
+    $icon-color: var(--snow);
+    cursor: pointer;
+    transform: scale(1.05);
+  }
+}
+
+.signup {
+  margin-top: 30px;
+
+  @include desktop {
+    margin-left: 70px;
+    margin-top: 30px;
+    position: relative;
+  }
+
+  &__head {
+    display: flex;
+    justify-content: center;
+    color: var(--snow);
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 1.14;
+    margin-bottom: 20px;
+
+    @include desktop {
+      justify-content: start;
+    }
+  }
+
+  &__input {
+    width: 330px;
+    height: 50px;
+    background-color: transparent;
+    border: solid 1px;
+    border-radius: 4px;
+    border-color: rgba(255, 255, 255, 0.3);
+    padding-left: 16px;
+  }
+  &__form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @include desktop {
+      flex-direction: row;
+      align-items: center;
+    }
+  }
+  &__button {
+    height: 50px;
+    width: 200px;
+    background-color: var(--blue-sky);
+    color: var(--snow);
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.6;
+    letter-spacing: 0.06em;
+    border-radius: 4px;
+    border: none;
+    text-align: center;
+    align-items: baseline;
+    margin-top: 20px;
+    padding-left: 28px;
+    @include transition;
+
+    @include desktop {
+      margin-left: 12px;
+      margin-top: 0;
+    }
+  }
+  &__button:hover,
+  &__button:focus {
+    transform: scale(1.05);
+    cursor: pointer;
+  }
+
+  &__icon {
+    fill: var(--snow);
+    margin-left: 20px;
+    position: relative;
+    top: 7px;
+  }
+  &__input:focus-within {
+    color: var(--snow);
+  }
+}
