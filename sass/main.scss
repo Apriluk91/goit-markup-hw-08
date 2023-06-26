@@ -1,5 +1,7 @@
-@import './components/basics';
+@import './utils/mixins';
 @import './utils/vars';
+@import './utils/basics';
+
 @import './components/header';
 @import './components/main-header-nav';
 @import './components/main-header-contacts';
