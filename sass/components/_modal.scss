@@ -1,11 +1,11 @@
 .modal {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   width: calc(100% - 30px);
   max-width: 450px;
   height: auto;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   background-color: var(--snow);
   border-radius: 4px;
   box-shadow: 0px 2px 1px #00000033, 0px 1px 1px #00000024,
@@ -17,7 +17,7 @@
   }
 
   @include desktop {
-    max-width: 528px;
+    width: 528px;
     height: 581px;
   }
 
