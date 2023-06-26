@@ -4,9 +4,29 @@
   &__list {
     list-style-type: none;
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
     gap: 30px;
     padding: 0;
+
+    @include tablet {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+    @include desktop {
+      display: flex;
+      flex-direction: row;
+    }
+
+    &__img {
+      display: block;
+
+      @include desktop {
+        width: 270px;
+      }
+    }
   }
 
   &__list-styles {
