@@ -1,24 +1,47 @@
 .section-about {
   list-style-type: none;
   display: flex;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
-  justify-content: space-between;
   gap: 30px;
   margin: 0px;
   padding-inline-start: 0px;
+
+  @include tablet {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  @include desktop {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
 }
 
 .about-item {
   border-radius: 4px;
+  width: 100%;
+  display: block;
+  text-align: center;
 
   &__div {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 270px;
     height: 120px;
     background-color: #f5f4fa;
     margin-bottom: 30px;
+
+    @include tablet {
+      padding: 25px 143px;
+    }
+
+    @include desktop {
+      padding: 25px 100px;
+      text-align: center;
+    }
   }
 
   &__head {
@@ -32,5 +55,6 @@
     font-size: 14px;
     line-height: 1.71;
     color: var(--nearly-black);
+    text-align: left;
   }
 }
