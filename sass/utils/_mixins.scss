@@ -28,3 +28,12 @@
     transform: scale(1.05);
   }
 }
+
+@mixin logo {
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
