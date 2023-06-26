@@ -1,0 +1,116 @@
+.menu-container.is-open {
+  transform: translateX(0);
+}
+
+.menu-container {
+  background-color: #fff;
+  position: fixed;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transform: translateX(100%);
+  padding: 48px 40px;
+  @include transition;
+}
+.menu-toggle {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  border: none;
+  background-color: transparent;
+  display: flex;
+  justify-content: space-between;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  outline: none;
+  margin: 0;
+  padding: 0;
+
+  @include transition;
+  @include hover-active;
+  @include tablet {
+    display: none;
+  }
+  @include desktop {
+    display: none;
+  }
+}
+
+.mobile {
+  background-color: #fff;
+
+  &__navitem {
+    font-size: 40px;
+    line-height: 1.17;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+
+    flex-direction: column;
+    justify-content: space-between;
+
+    &:not(:last-child) {
+      margin-bottom: 32px;
+    }
+  }
+  &__navlink {
+    color: $main-text-color;
+    @include transition;
+    @include hover-active;
+  }
+  &__contact {
+    margin-top: auto;
+    margin-bottom: 64px;
+  }
+
+  &__clist:not(:last-child) {
+    margin-bottom: 32px;
+    @include transition;
+    @include hover-active;
+  }
+
+  &__phone {
+    font-size: 34px;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    line-height: 1.17;
+    color: var(--blue-sky);
+
+    margin-bottom: 32px;
+  }
+  &__email {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+    color: $paragraf-text-color;
+
+    @include hover-active;
+  }
+  &__medialist {
+    display: flex;
+
+    gap: 10px;
+  }
+  &__mediaitem {
+    display: flex;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+  }
+  &__medialink {
+    color: $super-blue;
+    display: block;
+    padding: 0;
+    border-color: $active-color;
+    @include transition;
+    @include hover-scale;
+  }
+  &__stroke {
+    height: 22px;
+    margin-left: 10px;
+    color: #afb1b8;
+  }
+}
