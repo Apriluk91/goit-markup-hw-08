@@ -76,7 +76,6 @@
     letter-spacing: 0.02em;
     line-height: 1.17;
     color: var(--blue-sky);
-
     margin-bottom: 32px;
   }
   &__email {
@@ -84,13 +83,12 @@
     font-weight: 500;
     line-height: 1.17;
     letter-spacing: 0.02em;
-    color: var(gray);
+    color: var(--gray);
 
     @include hover-active;
   }
   &__medialist {
     display: flex;
-
     gap: 10px;
   }
   &__mediaitem {
