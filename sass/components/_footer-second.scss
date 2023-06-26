@@ -1,0 +1,42 @@
+.joinus {
+  margin-left: 70px;
+
+  &__text {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    color: var(--snow);
+    text-transform: uppercase;
+  }
+
+  &__list {
+    width: 44px;
+    height: 44px;
+    margin-right: 10px;
+    border-radius: 50%;
+    background-color: #ffffff1a;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &--svg {
+      fill: var(--snow);
+    }
+
+    &:hover,
+    :focus {
+      cursor: pointer;
+      background-color: var(--blue-sky);
+      transition: background-color 250ms var(--cubic-bezier);
+    }
+  }
+}
+
+.joinus-box {
+  width: 206px;
+  height: 44px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 19px;
+}

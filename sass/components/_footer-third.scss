@@ -1,0 +1,50 @@
+.footer-label {
+  width: 358px;
+  margin-left: 78px;
+}
+
+.newsletter {
+  display: flex;
+  align-items: flex-end;
+  margin-left: 76px;
+
+  &__text {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    color: var(--snow);
+    text-transform: uppercase;
+  }
+
+  &__input {
+    box-sizing: border-box;
+    margin-top: 20px;
+    width: 358px;
+    height: 50px;
+    padding: 16px 0px 16px 15px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    background-color: var(--main-theme);
+    color: rgba(255, 255, 255, 0.6);
+  }
+
+  &__button {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    color: var(--snow);
+    cursor: pointer;
+    width: 200px;
+    height: 50px;
+    margin-left: 12px;
+    border: none;
+    background-color: var(--blue-sky);
+    padding: 10px 28px 10px 42px;
+    border-radius: 4px;
+
+    &--svg {
+      vertical-align: middle;
+      margin-left: 24px;
+    }
+  }
+}

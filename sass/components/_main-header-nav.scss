@@ -1,0 +1,34 @@
+.main-header-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 46px;
+  list-style-type: none;
+  max-width: 245px;
+  margin-left: 93px;
+  margin-right: 371px;
+  padding-left: 0px;
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+
+  &__menu {
+    color: #212121;
+    display: flex;
+    gap: 46px;
+    position: relative;
+
+    &:focus,
+    :hover {
+      color: var(--blue-sky);
+      transition: color 250ms var(--cubic-bezier);
+    }
+  }
+
+  &--fonts {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.15;
+    letter-spacing: 0.02em;
+    color: var(--nearly-black);
+  }
+}

@@ -1,0 +1,35 @@
+.main-footer {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+}
+
+.footer-style {
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.17;
+  margin-bottom: 20px;
+
+  &__adress {
+    color: var(--snow);
+    font-size: 14px;
+    line-height: 1.71;
+    margin-top: 20px;
+    margin-bottom: 9px;
+  }
+
+  &__adress-two {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 14px;
+    line-height: 1.71;
+    margin-bottom: 9px;
+
+    &:hover,
+    :focus {
+      color: var(--blue-sky);
+      transition: color 250ms var(--cubic-bezier);
+    }
+  }
+}

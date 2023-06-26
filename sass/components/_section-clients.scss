@@ -1,0 +1,25 @@
+.clients {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+
+  &__link {
+    fill: #afb1b8;
+    width: 170px;
+    height: 92px;
+    border: #afb1b8 solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &:hover,
+    :focus {
+      border-color: var(--blue-sky);
+      cursor: pointer;
+      fill: var(--blue-sky);
+      transition: fill 250ms var(--cubic-bezier),
+        border 250ms var(--cubic-bezier);
+    }
+  }
+}
