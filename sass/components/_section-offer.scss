@@ -1,5 +1,9 @@
 .section-hidden {
   display: none;
+
+  @include desktop {
+    display: flex;
+  }
 }
 
 .offer {
