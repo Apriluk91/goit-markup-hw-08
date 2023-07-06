@@ -512,52 +512,46 @@
       </ul>
     </div>
 
-<div class="backdrop is-hidden" data-modal>
-  <div class="modal">
-    <button type="button" class="modal__button-close" data-modal-close>
-      <svg width="18" height="18">
-        <use href="./images/icons.svg#icon-close-x">
-        </use>
+  <div class="backdrop is-hidden" data-modal>
+  <div class="modal-franchise">
+    <button
+      type="button"
+      class="modal-franchise__button-close"
+      data-modal-close
+    >
+      <svg width="20" height="20">
+        <!-- wrzucić svg -->
+        <use href="/"></use>
       </svg>
     </button>
-    <form class="modal-form">
-      <p class="modal-form__text">Zostaw swoje dane w formularzu poniżej</p> 
-      <label class="modal-form__label" for="orderusername">Imie
-        <span class="modal-form__label-styles">
-          <input class="modal-form__input-styles" type="text" name="orderusername" required>
-          <svg class="modal-form--svg" width="18" height="18">
-          <use href="./images/icons.svg#icon-person-black-18dp-1"></use>
-          </svg>
-        </span>
+    <form class="modal-franchise-form">
+      <p class="modal-franchise-form__firsttext">
+        Thank you for your interest in owning an Ice Cream shop
+      </p>
+      <p class="modal-franchise-form__secondtext">
+        Due to the overwhelming volume of franchise requests we are not
+        accepting new franchisee applications at this time. Once the application
+        process resumes, we will contact you for further information. Please
+        fill out the contact information below and we will reach out for
+        additional information. We appreciate your patience.
+      </p>
+      <label class="modal-franchise-form__label" for="franchiseusername"
+        ><input class="modal-franchise-form__input" type="text" name="franchiseusername" placeholder="Name" />
       </label>
-      <label class="modal-form__label" for="orderphonenumber">Telefon
-        <span class="modal-form__label-styles"><input class="modal-form__input-styles" type="text" name="orderphonenumber" type="number" required>
-          <svg class="modal-form--svg" width="18" height="18"><use href="./images/icons.svg#icon-phone-black-18dp-1"></use>
-          </svg>
-        </span>
+      <label class="modal-franchise-form__label" for="franchisephone"
+        ><input class="modal-franchise-form__input" type="number" name="franchisephone" placeholder="Phone" />
       </label>
-      <label class="modal-form__label" for="orderemail">Email
-        <span class="modal-form__label-styles"><input class="modal-form__input-styles" type="text" name="orderemail" type="email" required>
-          <svg class="modal-form--svg" width="18" height="18"><use href="./images/icons.svg#icon-email-black-18dp-1"></use>
-          </svg>
-        </span> 
+      <label class="modal-franchise-form__label" for="franchiseemail"
+        ><input class="modal-franchise-form__input" type="email" name="franchiseemail" placeholder="Email" />
       </label>
-      <label class="modal-form__label" for="ordercomment">Komentarz
-        <textarea placeholder="Wprowadź tekst" class="modal-form__textarea modal-form__textarea--placeholder" name="ordercomment"></textarea>
-      </label>   
-      <label class="modal-form__rodo" for="orderrodo">
-        <input type="checkbox" id="orderrodo" name="rodo-accept" value="rodo-accept" class="rodo-accept" required>
-        <span class="modal-form__rodo-styles">
-          <svg class="modal-form__rodo-styles--icon" width="16" height="15">
-          <use href="./images/icons.svg#icon-Vector-1"></use>
-          </svg>
-        </span>
-        <p class="modal-form__rodo--text">Oświadczam iż akceptuję <a href="/" class="modal-form__rodo--link">Regulamin</a> i <a href="/" class="modal-form__rodo--link">Politykę Prywatności</a>.</p>
+      <label class="modal-franchise-form__label" for="franchisetextarea">
+        <textarea class="modal-franchise-form__textarea" placeholder="Comment" name="franchisetextarea"></textarea>
       </label>
-    <button class="modal-form__button-send" type="submit">Wyślij</button>
+      <button type="submit" class="modal-franchise-form__button">Submit</button>
     </form>
   </div>
 </div>
+
 
     <script
       defer
